@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOL Story Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Silly Story Generator</h1>
+    <div class="emoji">😹</div>
+    <form id="storyForm" autocomplete="off">
+        <div class="input-group">
+            <label for="nameInput">Enter a funny name:</label>
+            <input type="text" id="nameInput" placeholder="e.g., Sir Chuckles, Professor Giggles" maxlength="24" required>
+        </div>
+        <div>
+            <label>Choose your humor style:</label>
+            <div class="humor-style">
+                <label><input type="radio" name="humor" value="silly" checked> Silly & Absurd</label>
+                <label><input type="radio" name="humor" value="dark"> Dark Humor</label>
+                <label><input type="radio" name="humor" value="punny"> Punny Jokes</label>
+            </div>
+        </div>
+        <button type="submit">Generate Funny Story!</button>
+    </form>
+    <div id="storyBox" class="story-box">
+        Your hilarious story will appear here! Get ready to laugh! 😹
+    </div>
+    <div class="pro-tips">
+        <b>Pro Tips for Maximum Laughs:</b>
+        <ul>
+            <li>Use ridiculous names like "Captain Underpants" or "Princess Sparklefarts"</li>
+            <li>Try different humor styles for variety</li>
+            <li>Share your favorite stories with friends!</li>
+        </ul>
+    </div>
+    <div class="footer">Made with 😹 and lots of laughter | LOL Story Generator © 2025</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
