@@ -1,5 +1,5 @@
 function generateTenLineStory(name, humorStyle) {
-    // Silly story events pool (customize for other humor styles as needed!)
+  
     const sillyEvents = [
         `One morning, ${name} woke up inside a giant watermelon.`,
         `A herd of tiny elephants marched across their slippers.`,
@@ -17,15 +17,15 @@ function generateTenLineStory(name, humorStyle) {
         `The mailbox started telling jokes every time ${name} walked by.`,
         `${name} made friends with bubbles that refused to pop and instead sang lullabies.`
     ];
-    // Pick 10 random, non-repeating events from the pool each time
+    
     let selected = [];
-    let pool = sillyEvents.slice(); // copy to avoid modifying originals
+    let pool = sillyEvents.slice(); 
 
     for (let i = 0; i < 10; i++) {
-        if(pool.length === 0) break; // fewer than 10 events
+        if(pool.length === 0) break;
         let idx = Math.floor(Math.random() * pool.length);
         selected.push(pool[idx]);
-        pool.splice(idx, 1); // prevent repeats
+        pool.splice(idx, 1); // 
     }
     return selected.join('\n');
 }
@@ -37,3 +37,4 @@ document.getElementById('storyForm').addEventListener('submit', function(event) 
     const story = generateTenLineStory(nameInput, humorStyle);
     document.getElementById('storyBox').textContent = story;
 });
+
